@@ -77,10 +77,16 @@
     });
 
 
-    function botaoClicado(event) {
-        let texto = event.currentTarget.querySelector("span");
-        
-        texto.textContent++;
+    function botaoClicado() {
+        let texto = botao.querySelector("span");
+
+        if(curtir === false){
+            texto.textContent++;
+            curtir = true;
+        } else {
+            text.textContent++;
+            curtiu = false;
+        }
     }
 </script>
 
